@@ -1,0 +1,279 @@
+header .navbar .nav-link,
+header .navbar .nav-link.active {
+    color: #fff;
+}
+
+header .navbar .nav-item {
+    margin-right: 1.5rem;
+}
+
+.v-sep {
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.v-sep::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 16px;
+    margin-top: -8px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.v-sep:last-child {
+    padding-right: 0;
+}
+
+#hero,
+#hero .carousel-item {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+#hero .carousel-caption {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hero .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#narrow {
+    
+    padding-top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../images/homepage-option17-banner-bg.jpg);
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    width: 1504px;
+    
+    
+}
+#easyy{
+    margin-top: 110px;
+    margin-left: 780px;
+}
+#easyy .eas {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+}
+#secsection{
+    margin-bottom: 110px;
+}
+#beauty{
+    margin-top: 110px;
+    
+
+}
+#cardred {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(212, 6, 6);
+    border-radius: 50%;
+    margin: auto;
+    
+  }
+  #iconcard {
+    padding-top: 0.8rem;
+  }
+  #thrsection{
+    margin-bottom: 110px;
+  }
+  .pkg-item {
+    flex: 1 25%;
+    overflow: hidden;
+    padding: 7px;
+    position: relative;
+
+}
+.pkg-item img {
+    width: 100%;
+    transition: all 1s linear;
+}
+
+.pkg-details{
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 14px;
+    transition: background-color 0.5s ease-in-out;
+}
+.pkg-details h3 {
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}
+.pkg-details p {
+    font-size: 0.8rem;
+}
+#packages {
+    text-align: center;
+    
+}
+.pkg-item:hover .pkg-details {
+    opacity: 1;
+
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+
+}
+.pkg-item:hover .pkg-details h3 {
+    opacity: 1;
+    color: #000;
+
+}
+.pkg-item:hover img {
+    transform: scale(170%) rotate(10deg);
+    filter: grayscale(1);
+}
+.weba:hover fourrr {
+    display: none;
+
+}
+#packages h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 4rem;
+
+}
+#fourrrs,.ab {
+    display: none;
+}
+/*show .ab*/
+.weba:hover ~ .fourrr {
+    display: block;
+    
+}
+/*show .abc*/
+#s:hover ~ .abc {
+    display: block;
+}
+
+#s:hover ~ .a,
+#f:hover ~ .a{
+    display: none;
+}
+#labtop {
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+}
+.sline {
+    justify-content: center;
+    border-spacing: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.handshake {
+    padding-top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-image: url(../images/services-classic-07-min.jpg);
+    background-size: cover;
+    
+}
+.card-titlel{
+    font-size: 2.8rem;
+}
+
+.maincontainer
+{
+    width: 302px;
+    height: 299px;
+    margin: 10px;
+    float: left; /* stack each div horizontally */
+}
+
+img
+{
+   border-radius: 10px;
+}
+
+.back h2
+{
+    position: absolute;
+}
+
+.back p
+{
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+}
+
+.front h2
+{
+    position: absolute;
+    padding: 10px;
+    top: 200px;
+    color: #000;
+}
+
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 302px;
+    height: 290px;
+    
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #ef0303;
+    color: #fff;
+    width: 302px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+  

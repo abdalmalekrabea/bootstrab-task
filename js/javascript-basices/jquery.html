@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex d-flex align-items-center justify-content-between py-3 border-bottom mb-4">
+            <h1>My To-do list</h1>
+            <div>
+                <button class="btn btn-dark">Load Data</button>
+                <button class="btn btn-dark"
+                >Clear</button>
+            </div>
+        </header>
+        <form action="" class="d-flex mb-4 bg-light p-3 border-rounded">
+            <div class="col-6">
+                <input type="text" placeholder="Taske title..." class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary ms-2">Add Task</button>
+        </form>
+        <ul id="list"></ul>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        // document.querySelector('form .btn').style.color = 'red';
+        // $('form .btn').css('color','yellow').html('<b>Add!!!!</b>')
+        $(document).ready(function () {
+                $('header h1')
+                .css('text-transform', 'uppercase')
+                .css('font-size', '2rem')
+                .addClass('text-primary')
+                .html("To-do list")
+                .fadeOut(2000)
+                .fadeIn(3000);
+                
+        });
+
+    </script>
+    
+</body>
+
+</html>
