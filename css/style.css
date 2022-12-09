@@ -264,16 +264,77 @@ img
     padding: 5px;
     backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
     transition: transform .5s linear 0s;
+   
 }
 
 .maincontainer:hover > .front
 {
     transform: perspective(600px) rotateY(-180deg);
+    
 }
 
 .maincontainer:hover > .back
 {
     transform: perspective(600px) rotateY(0deg);
 }
+.features{
+    padding:50px;
+}
+.features i {
+    background-color: #ff214f;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+.features p {
+    color: gray;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     margin-bottom: 100px;
+    padding: 10px;
+    font-size: 17px;
+}
+.features h6 {
+    font-size: 17px;
+}
+.backpic{
+    background-image: url(..//images/back.jfif);
+    
+}
+.text-img{
+   text-align: end;
+   margin-bottom: 10rem;
+}
+.stats1{
+    padding: 100px 0;
+    color: rgb(194, 186, 186);
+    text-align: center;
+    
+}
+.stats1 .num {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.stats1 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+.stats{
+    
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+   
+}
+  body{overflow-x: hidden;
 
-  
+  }
+.stats{
+    
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+   margin-top: 10rem;
+}
